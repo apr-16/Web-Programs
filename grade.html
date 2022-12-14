@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function grade(){
+        var mark;
+        mark=parseInt(document.getElementById("mark").value);
+        console.log(mark);
+        
+        switch(true)
+        {
+        case mark>90:
+            document.write("A Grade");
+            break;
+        case mark>80:
+            document.write("B Grade");
+            break;
+        case mark>70:
+            document.write("C Grade");
+            break;
+        case mark>60:
+            document.write("D Grade")
+            break;
+        case mark>=0:
+            document.write("Fail")
+            break;
+        default:
+            document.write("Enter valid Mark")
+            break;
+        }
+    }
+
+            
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Enter your mark<input type="text" id="mark">
+<input type="button" id="check" value="check" onclick="grade()">
+<input type="text" id="result"
+    
+</body>
+</html>
