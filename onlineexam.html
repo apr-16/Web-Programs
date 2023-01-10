@@ -3,10 +3,19 @@
 <head>
     <style>
         body{
-            background-image: url('pic2.jpg');
+            background-image: url('pic1.jpg');
             overflow:hidden;
-            background-size: 50%;
+            background-size: 100%;
+            }
+        .tab{
             padding: 40%;
+            padding-left: 60px;
+            border-spacing: 5cm;
+            color: rgb(255, 255, 255);
+            opacity: 90%;
+            }
+        #sb{
+            padding: 15px;
         }
         
 
@@ -14,9 +23,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="tab">
     <form>
-        <table border="0" style="background-color: rgb(43, 116, 103);">
+        <table border="0" style="background-color: rgb(21, 8, 37);">
             <tr>
                 <td>Name:</td>
                 <td><input type="text" id="name"></td>
@@ -31,7 +40,11 @@
             </tr>
             <tr>
                 <td></td>
-                <td><a href="">Click here for exam</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" id="sb"><input type="button" id="submit" value="Submit"><a target="exam.html"></a></td>
             </tr>
         </table>
     </form>
