@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function changeback(color) {
+            document.body.style.background = color
+        }
+
+        function changehead(color) {
+            var c = document.getElementById("h1")
+            c.style.backgroundColor = color
+        }
+
+        function reset(color) {
+            document.body.style.background = color
+            var d = document.getElementById("h1")
+            d.style.backgroundColor = color
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">The background color of the heading changes</h1>
+    <p>click here to change the background color of the heading</p>
+    <input type="button" id="red" value="red" onclick="changehead('red')">
+    <input type="button" id="pink" value="pink" onclick="changehead('pink')">
+    <input type="button" id="orange" value="orange" onclick="changehead('orange')"><br> <br>
+    <p>Click here to change the background color</p>
+    <input type="button" id="yellow" value="yellow" onclick="changeback('yellow')">
+    <input type="button" id="green" value="green" onclick="changeback('green')">
+    <input type="button" id="skyblue" value="cyan" onclick="changeback('cyan')"><br><br>
+    <input type="button" id="reset" value="reset" onclick="reset('white')">
+</body>
+
+</html>
